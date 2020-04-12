@@ -1,0 +1,33 @@
+# 端口配置
+server:
+  port: 7001
+
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      #设置与eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+# 数据库配置
+spring:
+  datasource:
+    url: jdbc:mysql://47.106.112.192:6607/cloud_test?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+

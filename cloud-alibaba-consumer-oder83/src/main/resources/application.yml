@@ -1,6 +1,6 @@
 # 端口配置
 server:
-  port: 80
+  port: 83
 
 
 # 数据库配置
@@ -10,7 +10,16 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: nacos-order-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.106.112.192:8848
 
+
+server-url:
+  nacos-user-service: http://nacos-provider
 
 
 

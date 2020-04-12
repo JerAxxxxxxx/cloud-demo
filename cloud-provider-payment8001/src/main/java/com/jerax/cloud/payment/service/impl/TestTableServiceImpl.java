@@ -2,7 +2,7 @@ package com.jerax.cloud.payment.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.jerax.cloud.payment.mapper.TestTableMapper;
+import com.jerax.cloud.core.mapper.TestTableMapper;
 import com.jerax.cloud.core.entity.po.TestTable;
 import com.jerax.cloud.payment.service.TestTableService;
 /**

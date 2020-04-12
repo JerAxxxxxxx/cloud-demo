@@ -1,4 +1,4 @@
-package com.jerax.cloud.payment.mapper;
+package com.jerax.cloud.core.mapper;
 
 import com.jerax.cloud.core.entity.po.TestTable;
 import org.apache.ibatis.annotations.Mapper;

@@ -15,14 +15,14 @@ import org.springframework.web.bind.annotation.*;
  */
 @Slf4j
 @RestController
-@RequestMapping
+@RequestMapping("/payment")
 public class TestTableController {
 
     @Autowired
     TestTableService tableService;
 
 
-    @PostMapping("/insert")
+    @PostMapping("/create")
     public ResultVO insert(@RequestBody TestTable testTable) {
         int i = tableService.insertSelective(testTable);
         log.info("插入结果:" + i);

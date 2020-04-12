@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
+    <artifactId>cloud-alibaba-consumer-oder83</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,6 +18,9 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
     </dependencies>
 </project>
