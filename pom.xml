@@ -42,7 +42,7 @@
         <mybatis.spring.boot.version>2.1.1</mybatis.spring.boot.version>
 
 
-        <hutool.version>5.2.5</hutool.version>
+        <hutool.version>5.8.3</hutool.version>
     </properties>
 
 
